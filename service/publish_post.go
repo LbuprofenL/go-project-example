@@ -19,7 +19,7 @@ func (a *AppendPostFlow) checkParam() error {
 		return errors.New("topic id must be larger than 0")
 	}
 	//分配一个独一无二的id,考虑高并发
-	a.newPo.Id = (fastrand.Int63()) 
+	a.newPo.Id = (fastrand.Int63())
 	return nil
 }
 
