@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/Moonlight-Zhao/go-project-example/cotroller"
-	"github.com/Moonlight-Zhao/go-project-example/repository"
-	"gopkg.in/gin-gonic/gin.v1"
+	"go-project-example/cotroller"
+	"go-project-example/repository"
 	"os"
+
+	"gopkg.in/gin-gonic/gin.v1"
 )
 
 func main() {
@@ -19,6 +20,7 @@ func main() {
 	})
 
 	r.POST("/community/post/do", func(c *gin.Context) {
+		// c.Request.ParseForm()
 		topicId, _ := c.GetPostForm("topic_id")
 		content, _ := c.GetPostForm("content")
 		data := cotroller.PublishPost(topicId, content)

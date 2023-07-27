@@ -1,10 +1,9 @@
 package cotroller
 
 import (
-	"github.com/Moonlight-Zhao/go-project-example/service"
+	"go-project-example/service"
 	"strconv"
 )
-
 
 func PublishPost(topicIdStr, content string) *PageData {
 	//参数转换

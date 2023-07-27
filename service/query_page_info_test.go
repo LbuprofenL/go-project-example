@@ -1,10 +1,12 @@
 package service
 
 import (
-	"github.com/Moonlight-Zhao/go-project-example/repository"
-	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"
+
+	"go-project-example/repository"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMain(m *testing.M) {

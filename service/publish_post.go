@@ -5,7 +5,8 @@ import (
 	"time"
 	"unicode/utf16"
 
-	"github.com/Moonlight-Zhao/go-project-example/repository"
+	"go-project-example/repository"
+
 	idworker "github.com/gitstliu/go-id-worker"
 )
 
